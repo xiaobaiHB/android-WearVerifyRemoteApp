@@ -23,7 +23,8 @@ dependencies {
     compile "com.android.support:cardview-v7:27.0.2"
     compile "com.android.support:appcompat-v7:27.0.2"
     compile 'com.google.android.support:wearable:2.2.0'
-    compile 'com.google.android.gms:play-services-wearable:11.8.0'
+    //noinspection GradleDependency specially in china
+    compile 'com.google.android.gms:play-services-wearable:10.2.0'
     compile 'com.android.support:support-v13:27.0.2'
     wearApp project(':Wearable')
 }
@@ -43,7 +44,7 @@ android {
 
     defaultConfig {
         minSdkVersion 23
-        targetSdkVersion 25
+        targetSdkVersion 27
     }
 
     compileOptions {
